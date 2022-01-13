@@ -1,0 +1,36 @@
+.footer__container {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #dcdcdc
+}
+
+.footer__allInfo {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.footer__title {
+    text-align: start;
+    color: #888888;
+}
+
+.footer__info {
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #888888;
+    flex-wrap: wrap;
+}
+
+.footer__margin {
+    margin-bottom: 20px;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: center;
+}

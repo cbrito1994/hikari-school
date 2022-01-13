@@ -1,0 +1,105 @@
+.intro__banner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fcfcfc;
+}
+
+.intro__banner > img {
+    padding: 30px 0px;
+    max-width: 100%;
+}
+
+.intro__main {
+    width: 85%;
+    margin: 20px auto;
+}
+
+@media screen and (max-width: 958px) {
+    .intro__main {
+        width: 90%;
+        justify-content: center;
+    }
+}
+
+.intro__description {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 958px) {
+    .intro__description {
+        justify-content: center;
+    }
+}
+
+.intro__level {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 958px) {
+    .intro__level {
+        justify-content: flex-start;
+    }
+}
+
+.description__container {
+    width: 50%;
+    white-space: pre-wrap;
+    text-align: justify;
+    font-size: large;
+    min-width: 400px;
+}
+
+@media screen and (max-width: 958px) {
+    .description__container {
+        width: 100%;
+        min-width: 100%;
+    }
+}
+
+.description__reel {
+    display: flex;
+    justify-content: center;
+    width: 38%;
+    min-width: 400px;
+}
+
+@media screen and (max-width: 958px) {
+    .description__reel {
+        width: 100%;
+        min-width: 100%;
+    }
+}
+
+.description__reel > img {
+    width: 80%
+}
+
+@media screen and (max-width: 958px) {
+    .description__reel > img {
+        width: 341px;
+    }
+}
+
+.pages__details {
+    margin: 40px 0px;
+}
+
+.coursesInfo__select {
+    padding: 10px;
+    color: #888888;
+    font-size: large;
+    font-weight: 700;
+    border-radius: 60px;
+    outline: none;
+}
+

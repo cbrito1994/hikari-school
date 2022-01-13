@@ -1,0 +1,350 @@
+.header {
+    position: fixed;
+    width: 100%;
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    background-color: #081c33;
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    
+    /* Animation */
+    transition: all 0.3s ease-in-out;
+}
+
+.header__display {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hikari__mainImage > img {
+    margin-top: 80px;
+}
+
+.header__wraper {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+}
+
+@media screen and (max-width: 829px) {
+    .header__wraper {
+        width: 95%;
+    }
+}
+
+.hikari__image {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    height: 100%;
+}
+
+.hikari__image > img {
+    max-width: 200px;
+    max-height: 40px;
+    cursor: pointer;
+}
+
+.title__container {
+    color: white;
+    padding: 22px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.dropdown__burgerMenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title__mainContainer:hover .dropdown__burgerMenu {
+    position: relative;
+}
+
+@media screen and (max-width: 829px) {
+    .title__container {
+        font-size: 16px;
+    }
+}
+
+.title__mainContainer {
+    text-decoration: none;
+}
+
+.title__container:hover {
+    background-color: #051221;
+}
+
+.menus {
+    display: flex;
+}
+
+@media screen and (max-width: 743px) {
+    .menus {
+        display: none;
+    }
+}
+
+.title__mainContainer:hover .dropdown__content {
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+/* .cart__container::before {
+    content: "";
+    position: absolute;
+    border: .5rem solid transparent;
+    border-bottom-color: #aaa;
+    border-bottom-style: outset;
+    transform: translate(1600%, -.5rem);
+    bottom: 96%;
+} */
+
+.burgerMenu__basketIndicator {
+    display: none
+}
+
+.header__burgerIcon {
+    display: block !important;
+    color: white;
+    align-self: center;
+    font-size: 36px !important;
+    cursor: pointer;
+}
+
+.basket__indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6px;
+    width: 6px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    border-radius: 50%;
+    padding: 6px;
+    font-size: 11px;
+    border: 1px solid white;
+}
+
+@media screen and (max-width: 743px) {
+    .burgerMenu__basketIndicator {
+        display: flex;
+        height: fit-content;
+        position: relative;
+    }
+}
+
+.cart__container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    z-index: 3;
+    right: 50px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    transition: all 0.5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    /* animation: cart-appear 0.4s linear 0s forwards;
+    transform: scale(0.9); */
+}
+
+.title__mainContainer:hover .cart__container {
+    visibility: visible;
+    opacity: 1;
+}
+
+@keyframes cart-appear {
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.cart__coursesContainer {
+    max-height: 140px;
+    overflow-y: scroll;
+}
+
+.cart__coursesContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.cart__courses {
+    display: flex;
+    position: relative;
+    padding: 20px 20px;
+    align-items: center;
+    border-bottom: 1px solid #aaa;
+}
+
+.cart__courses:last-of-type {
+    border-bottom: none;
+}
+
+.cart__courses > img {
+    max-width: 50px;
+    border-radius: 2px;
+    border: 1px solid #aaa;
+}
+
+.cart__courses > span:first-of-type {
+    color: #888888;
+    padding-right: 10px;
+}
+
+.cart__courses > span:last-of-type {
+    color: #888888;
+    font-size: 2rem;
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 0.3s;
+}
+
+.cart__courses > span:last-of-type:hover {
+    color: rgb(148, 30, 30)
+}
+
+.cart__titlePeriod {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 0px 16px;
+}
+
+@media screen and (max-width: 400px) {
+    .cart__titlePeriod > span:first-child {
+        font-size: 14px;
+    }
+}
+
+.cart__titlePeriod > span:last-child {
+    font-size: 14px;
+    color: #888888;
+}
+
+.cart__prepay {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #aaa;
+}
+
+.cart__prepay > span {
+    padding: 6px 16px;
+    background-color: #081c33;
+    color: white;
+    border: 2px solid #081c33;
+    border-radius: 2px;
+    letter-spacing: 3px;
+    transition: all 300ms ease-in;
+    cursor: pointer;
+}
+
+.cart__prepay > span:hover {
+    background-color: white;
+    color: #081c33;
+}
+
+.cart__title {
+    flex: 1;
+    text-align: start;
+    color: #888888;
+}
+
+.header__burgerMenu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* min-height: 100vh; */
+    bottom: 0;
+    left: 100%;
+    z-index: -4;
+    background-color: #081c33;
+    padding-top: 70px;
+    visibility: hidden;
+    transition: all 0.6s ease-in-out;
+}
+
+.burgerMenu__visibility {
+    visibility: visible;
+    left: 0;
+}
+
+.container__burger {
+    display: block;
+    text-align: center;
+}
+
+.burger__prepay {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 8px 0px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-top: 1px solid #aaa;
+}
+
+.burger__prepay > span:first-of-type {
+    padding: 6px 16px;
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    border-radius: 2px;
+    letter-spacing: 3px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+.burger__prepay > span:first-of-type:hover {
+    background-color: white;
+    color: red;
+}
+
+.burger__prepay > span:last-of-type {
+    padding: 6px 16px;
+    background-color: #081c33;
+    color: white;
+    border: 2px solid #081c33;
+    border-radius: 2px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+
+.burger__prepay > span:last-of-type:hover {
+    background-color: white;
+    color: #081c33;
+}
+
+.burger__title {
+    flex: 1;
+    text-align: start;
+    color: #888888;
+    padding-left: 10px;
+}

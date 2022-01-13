@@ -1,0 +1,17 @@
+.page__levels {
+    cursor: pointer;
+    font-weight: lighter;
+    color: rgba(138, 138, 138, 0.932);
+    font-size: 20px;
+    flex: 1;
+    border-bottom: 1px solid rgba(172, 172, 172, 0.932);
+    text-align: center;
+}
+
+.page__levels.active {
+    border: 1px solid rgba(172, 172, 172, 0.932);
+    border-bottom: none;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+    background-color: rgba(247, 247, 247, 0.932);
+}

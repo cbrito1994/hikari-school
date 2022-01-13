@@ -1,0 +1,28 @@
+.hbm__container {
+    color: white;
+    padding: 22px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.hbm__containerColor {
+    background-color: #051221;
+}
+
+.hbm__dropdown {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.4s ease-in-out;
+    text-align: center;
+}
+
+.hbm__dropdownShow {
+    position: relative;
+    visibility: visible;
+    transform: scaleY(1);
+}

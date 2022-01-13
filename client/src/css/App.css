@@ -1,0 +1,33 @@
+@import "Home.css";
+@import "Header.css";
+@import "LevelsDetails.css";
+@import "Menus.css";
+@import "DiscountsInfo.css";
+@import "Submenus.css";
+@import "Footer.css";
+@import "DiscountsInfoModal.css";
+@import "CoursesInfo.css";
+@import "LevelChanges.css";
+@import "PageLevels.css";
+@import "Checkout.css";
+@import "Cursos.css";
+@import "HeaderBurgerMenus.css";
+@import "BurgerMenus.css";
+@import "Katei.css";
+@import "PaymentFinished.css";
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

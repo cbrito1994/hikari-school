@@ -1,0 +1,166 @@
+.courses__backgroundTop {
+    height: 500px;
+    background-image: url("../assets/CURSOS-banner-gif.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center -90px; /*50.00% 45.91%*/
+    background-attachment: fixed;
+}
+
+@media screen and (height: 1024px) { /*(height: 768px) and */
+    .courses__backgroundTop {
+        background-position: 50% -150px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .courses__backgroundTop {
+        background-position: 50% 25%;
+    }
+}
+
+.courses__stylingMain {
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.courses__stylingLevel {
+    margin-top: 14px;
+}
+
+.courses__stylingLearn {
+    padding-bottom: 48px;
+    display: flex;
+    justify-content: center;
+}
+
+.courses__videos {
+    height: 500px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    background-image: url("../assets/CURSOS-banner-gif.gif");
+    background-repeat: repeat;
+    background-size: 200px;
+}
+
+.courses__overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.courses__videoclip {
+    height: 200px;
+    width: 400px;
+    margin: 0 auto;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 410px) {
+    .courses__videoclip {
+        width: 350px;
+    }
+}
+
+.courses__contactData {
+    display: flex;
+    align-items: center;
+    background-image: url("../assets/CURSOS-formBannerBackground.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+}
+
+.contactData__form {
+    display: flex;
+    flex: 0.4;
+    flex-direction: column;
+    padding: 70px 24px;
+    padding-left: 120px;
+}
+
+@media screen and (max-width: 855px) {
+    .contactData__form {
+        flex: 100%;
+        justify-content: center;
+        padding: 30px;
+    }
+}
+
+.contactData__form > span {
+    text-align: left;
+    padding: 10px 0px;
+}
+
+.contactData__form > span:first-child {
+    color: #2e3c80;
+    font-size: large;
+}
+
+.contactData__form > span:last-of-type {
+    font-style: italic;
+    color: rgb(129, 16, 16);
+}
+
+.contactData__form > input {
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    outline: none;
+    margin: 10px 0px;
+}
+
+.contactData__selection {
+    margin: 10px 0px;
+    color: grey;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    outline: none;
+}
+
+.contactData__textarea {
+    margin-top: 10px;
+    margin-bottom: 28px;
+    resize: none;
+    height: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    outline: none;
+    font-size: 16px;
+}
+
+.contactData__button {
+    width: fit-content;
+    padding: 10px 20px;
+    letter-spacing: 3px;
+    color: white;
+    border: 1px solid lightgray;
+    background-color: #c4c4c4;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.contactData__button:hover {
+    background-color: #081c33;
+}
+
+.contactData__mascot {
+    display: flex;
+    flex: 0.6;
+    justify-content: center;
+}
+
+@media screen and (max-width: 855px) {
+    .contactData__mascot {
+        flex: 100%;
+    }
+}

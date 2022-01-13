@@ -1,0 +1,51 @@
+.levels__container {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    min-width: 285px;
+    border-bottom: 1px solid #888888;
+    align-items: center;
+}
+
+.image > img {
+    max-width: 300px;
+    transition: transform 450ms;
+    cursor: pointer;
+}
+
+.image > img:hover {
+    transform: scale(1.08);
+}
+
+.textDetail {
+    max-width: 100%;
+    height: 100%;
+    padding: 0px 18px;
+    color: #888888;
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
+.button > span {
+    padding: 8px 16px;
+    background-color: #081c33;
+    color: white;
+    border: 2px solid #081c33;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 300ms ease-in;
+}
+
+.button > span:hover {
+    background: white;
+    color: #081c33;
+    transition: all 200ms ease-in;
+}

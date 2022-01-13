@@ -1,0 +1,126 @@
+.info__details {
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    transition: all 0.25s ease;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 743px) {
+    .info__details {
+        padding-right: 8px;
+        width: fit-content;
+    }
+}
+
+.info__details:hover {
+    transform: translate3d(0, -5px, 0); /*(x,y,z), la z es para efectos tipo in or out*/
+    box-shadow: 0 2em 5rem 0 rgba(0, 0, 0, .1);
+    border-color: #c4c4c4;
+}
+
+@media screen and (max-width: 743px) {
+    .info__details:hover {
+        transform: none;
+        box-shadow: none;
+        border-color: transparent;
+    }
+}
+
+.info__details:hover .info__name, .info__details:hover .old__price, .info__details:hover .new__price {
+    font-weight: bold;
+}
+
+.info__details > img {
+    object-fit: contain;
+    max-width: 14%;
+}
+
+@media screen and (max-width: 743px) {
+    .info__details > img {
+        max-width: 26%;
+    }
+}
+
+.ribbon {
+    position: absolute;
+    transform: rotate(45deg);
+    top: 12px;
+    right: -70px;
+    width: 18%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .ribbon {
+      display: none;  
+    }
+}
+
+.old__price {
+    text-decoration: line-through;
+    color: #3F3F4A;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 743px) {
+    .old__price {
+        display: none;
+    }
+}
+
+.new__price {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 743px) {
+    .new__price {
+        display: none;
+    }
+}
+
+.interest__button {
+    border: 2px solid #c4c4c4;
+    border-radius: 2px;
+    padding: 12px 24px;
+    color: #c4c4c4;
+    cursor: pointer;
+    transition: all 450ms;
+}
+
+@media screen and (max-width: 743px) {
+    .interest__button {
+        padding: 8px 12px;
+    }
+}
+
+.interest__button:hover {
+    transform: scale(1.08);
+}
+
+@media screen and (max-width: 743px) {
+    .interest__button:hover {
+        transform: none;
+    }
+}
+
+/* .info__details::after {
+    border: 2px solid transparent;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: transform .4s ease-in-out;
+    transform: scaleX(0);
+}
+
+.info__details:hover::after {
+    border-bottom-color: #c4c4c4;
+    transform: scaleX(1);
+} */

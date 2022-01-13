@@ -1,0 +1,11 @@
+.bm__dropdownInfo {
+    padding: 14px 0px;
+    width: 100%;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+
+.bm__dropdownNames {
+    flex-grow: 1;
+}

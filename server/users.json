@@ -1,0 +1,39 @@
+{
+    "users": [
+        {
+            "id": 691292084,
+            "nickname": "TETE9788101",
+            "password": "qatest2618",
+            "site_status": "active",
+            "email": "test_user_59090319@testuser.com",
+            "credentials": {
+                "test": {
+                    "access_token": "TEST-4293163471887037-122101-4384368c5975c4af8ccc564a65db0120-691292084",
+                    "public_key": "TEST-4da5277b-e51d-4230-aaa0-ba397c30b5e4"
+                }, "production": {
+                    "access_token": "APP_USR-4293163471887037-122101-a7bd4980750b477f584c80909be46397-691292084",
+                    "public_key": "APP_USR-5f8a2c69-19a1-4527-8342-b09b7c015197",
+                    "client_id": 4293163471887037,
+                    "client_secret": "g3IVnEh5eHJxCt8gjY7pFsTLm51Httzj"
+                }
+            }
+        },{
+            "id": 691294397,
+            "nickname": "TESTX6KQHHRR",
+            "password": "qatest4992",
+            "site_status": "active",
+            "email": "test_user_77746490@testuser.com",
+            "credentials": {
+                "test": {
+                    "access_token": "TEST-4665296498328674-122101-bcf48bc9e5b8a32a48e333e78134ff1d-691294397",
+                    "public_key": "TEST-25fe28b0-afc6-41d3-b590-b765d833c4bc"
+                }, "production": {
+                    "access_token": "APP_USR-4665296498328674-122101-e4bb302f6b3a49d214574a5a9c4575d7-691294397",
+                    "public_key": "APP_USR-eda75300-44e0-4303-9dc6-3da5205c5928",
+                    "client_id": 4665296498328674,
+                    "client_secret": "lyjFJXt69aB2A0Zq6lkp1w0BEUW2Rdbm"
+                }
+            }
+        }
+    ]
+}

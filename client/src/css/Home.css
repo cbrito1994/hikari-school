@@ -1,0 +1,291 @@
+.hikari__banner {
+    background-image: url("https://www.hikari.mx/uploads/1/1/3/6/113652233/background-images/1417408208.png");
+    height: 125vh; /*jamas olvidar el vh porque si no, no funciona*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /*los ultimos 3 backgrounds son para centrar la imagen*/
+}
+
+.hikari__mainImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.start__button {
+    margin-top: 30px;
+}
+
+.start__button > span {
+    border: 1px solid white;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 300ms ease-in;
+    letter-spacing: 3px;
+}
+
+.start__button > span:after {
+    content: "COMIENZA AQUI";
+    /* font-size: medium; */
+}
+
+.start__button > span:hover {
+    background-color: white;
+    color: #05101d;
+    transition: all 500ms ease-in;
+}
+
+.start__button > span:hover:after {
+    content: "¡ APRENDE JAPONÉS HOY ! 🎌";
+    /* font-weight: bold; */
+}
+
+.socialMedia {
+    margin-top: 30px;
+}
+
+.hikari__middleInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.hikari__learnJapanese > img {
+    max-width: 100%;
+}
+
+.hikari__2image {
+    background-image: url("https://www.hikari.mx/uploads/1/1/3/6/113652233/background-images/1481838507.png");
+    height: 40vh; /*jamas olvidar el vh porque si no, no funciona*/
+    background-repeat: no-repeat;
+    background-position: 50.00% 0%;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    .hikari__2image {
+        height: 16vh
+    }
+}
+
+.hikari__mainInfo {
+    display: flex;
+    padding: 40px 0px;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+@media screen and (max-width: 770px) {
+    .hikari__mainInfo {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.hikari__table {
+    max-width: 30%;
+    padding-right: 15px;
+}
+
+@media screen and (max-width: 770px) {
+    .hikari__table {
+        padding: 80px 50px;
+        max-width: 100%;
+    }
+}
+
+.hikari__tableEnd {
+    max-width: 33%;
+}
+
+@media screen and (max-width: 770px) {
+    .hikari__tableEnd {
+        max-width: 100%;
+    }
+}
+
+.hikari__tableEnd > img, .hikari__table > div {
+    width: 100%;
+    object-fit: contain;
+}
+
+.hikarimodel {
+    max-height: 315px;
+}
+
+@media screen and (max-width: 770px) {
+    .hikarimodel {
+        max-height: 350px;
+    }
+}
+
+.hikari__table > div {
+    text-align: center;
+}
+
+.hikari__mainGif {
+    background-image: url("https://www.hikari.mx/uploads/1/1/3/6/113652233/background-images/2036864169.gif");
+    height: 444px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .hikari__mainGif {
+        background-position: center;
+        background-size: contain;
+        height: 200px;
+        margin-top: 0;
+    }
+}
+
+.hikari__levelLearning {
+    padding: 80px 0px;
+    background: linear-gradient(68deg, #dedede 0%, #fcfcfc 74%);
+    /* mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgb(247, 241, 241)); */
+}
+
+.hikari__levelTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.hikari__levelTitle > img {
+    padding: 0px 20px;
+}
+
+.hikari__levelTitle > h1 {
+    color: #3f3f3f
+}
+
+.hikari__levels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 85%;
+    margin: auto;
+}
+
+.additional__info {
+    padding: 80px 0px;
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 743px) {
+    .main__container {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 744px) and (max-width: 958px) {
+    .main__container {
+        max-width: 90%;
+    }
+}
+
+.main__container > span {
+    background-color: #081c33;
+    color: white;
+    padding: 10px 0px;
+    font-size: 17px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+@media screen and (max-width: 743px) {
+    .main__container > span {
+        width: 80%;
+        padding: 6px 0px;
+    }
+}
+
+.discount__logos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 743px) {
+    .discount__logos {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 36px;
+    }
+}
+
+@media screen and (min-width: 744px) and (max-width: 958px) {
+    .discount__logos {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 36px;
+    }
+}
+
+.discounts__container {
+    max-width: 12%;
+    position: relative;
+}
+
+@media screen and (max-width: 743px) {
+    .discounts__container {
+        max-width: 32%;
+    }
+}
+
+@media screen and (min-width: 744px) and (max-width: 958px) {
+    .discounts__container {
+        max-width: 16%;
+    }
+}
+
+.discounts__container > img {
+    max-width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.discounts__line {
+    border: 2px solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: all .4s ease-in-out;
+    transform: scaleX(0);
+}
+
+.discounts__container:hover .discounts__line {
+    transform: scaleX(1);
+}
+
+.table__paragraph {
+    font-size: 18px;
+    width: 330px;
+}
+
+.table__paragraph > strong {
+    color: #2e3c80;
+}

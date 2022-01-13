@@ -1,0 +1,309 @@
+.checkout__main {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.checkout__title {
+    text-align: start;
+    font-size: 21px;
+    color: #888888;
+    padding-bottom: 40px;
+}
+
+.checkout__containers {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1047px) {
+    .checkout__containers {
+        flex-direction: column;
+    }
+}
+
+.checkout__form {
+    width: 51%;
+}
+
+@media screen and (max-width: 1047px) {
+    .checkout__form {
+        width: 100%;
+    }
+}
+
+.checkout__form > div:last-of-type {
+    margin-bottom: 0;
+}
+
+.checkout__details, .checkout__payment, .checkout__finish, .personal__information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 25px;
+    margin-bottom: 25px;
+    border: 1px solid #D5D9DC;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.05);
+    box-shadow: 0 2px 5px #D5D9DC;
+}
+
+.details__edit {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.details__edit > span {
+    cursor: pointer;
+}
+
+.personal__infoSummary {
+    text-align: start;
+}
+
+.checkout__payment > label:first-of-type {
+    margin-bottom: 24px;
+}
+
+.summary__total {
+    margin-top: 16px;
+}
+
+.detalles, .personal__info, .summary__title, .paymentInfo, .paymentDirection, .finish__title {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #888888;
+    padding-bottom: 20px;
+    text-align: start;
+}
+
+.detalles__instructions {
+    text-align: start;
+    padding-bottom: 30px;
+    color: #888888;
+    font-weight: 500;
+}
+
+.checkout__details > label, .checkout__payment > label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1em;
+    margin-bottom: 10px;
+    color: #888888;
+}
+
+.checkout__details > input, .checkout__payment > input {
+    box-sizing: border-box;
+    height: 40px;
+    width: 100%;
+    padding: 0 16px;
+    color: rgba(0,0,0,0.5);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1em;
+    border: 1px solid #D5D9DC;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+.checkout__details > button, .checkout__payment > button {
+    outline: none;
+    padding: 6px 16px;
+    background-color: #081c33;
+    color: white;
+    border: 2px solid #081c33;
+    border-radius: 2px;
+    letter-spacing: 3px;
+    transition: all 300ms ease-in;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.checkout__details > button:hover, .checkout__payment > button:hover {
+    background-color: white;
+    color: #081c33;
+}
+
+.checkout__payment > button:disabled {
+    background-color: #c4c4c4;
+    border-color: #c4c4c4;
+    color: #888888;
+    cursor: not-allowed;
+}
+
+.checkout__summary {
+    position: sticky;
+    top: 14%;
+    width: 32%;
+    height: fit-content;
+    padding: 25px 25px;
+    border: 1px solid #D5D9DC;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 1047px) {
+    .checkout__summary {
+        display: none;
+    }
+}
+
+.littleScreenSummary {
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    /* border-bottom: 1px solid #888888; */
+}
+
+.littleScreenSummaryTotal {
+    margin-top: 16px;
+    padding: 10px;
+}
+
+.littleScreenTaxes {
+    text-align: start;
+    color: #888888;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.checkout__total {
+    display: flex;
+}
+
+.payment__instructions {
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #888888;
+}
+
+.total__title {
+    flex: 1;
+    text-align: start;
+    color: #888888;
+}
+
+.checkout__total > strong {
+    color: #888888;
+}
+
+.taxes__info {
+    text-align: start;
+    color: #888888;
+    margin-top: 10px;
+}
+
+.direction__repeat > input {
+    
+    color: #888888;
+    
+}
+
+.direction__repeat > label {
+    color: #888888;
+    font-size: 15px;
+}
+
+.custom__checkbox {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+
+}
+
+.custom__checkbox + label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom__checkbox + label::before {
+    content: "";
+    width: 1.1em;
+    height: 1.1em;
+    background-color: white;
+    border-radius: 1.1em;
+    border: 0.5em solid;
+    border: 1px solid #D5D9DC;
+    margin-right: 10px;
+}
+
+.custom__checkbox + label:hover::before {
+    content: "\2714";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #D5D9DC;
+}
+
+.custom__checkbox:checked + label::before {
+    content: "\2714";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-weight: bold;
+    background-color: #ebf1f7;
+}
+
+.info__wrapper {
+    text-align: start;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.wrapper__phone {
+    margin-bottom: 20px;
+}
+
+#inputStyle {
+    display: none;
+}
+
+#containerStyle {
+    box-sizing: border-box;
+    height: 40px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1em;
+    border: 1px solid #D5D9DC;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 30px;
+    padding-right: 10px;
+}
+
+#flagStyle {
+    border: none;
+}
+
+#selectWrapperStyle {
+    width: 100%
+}
+
+#selectWrapperStyle::before {
+    top: 30%;
+    right: 0;
+}
+
+#selectStyle {
+    border-radius: none;
+    border: none;
+    color: rgba(0,0,0,0.5);
+}
+
+.StripeElement {
+    width: 100%;
+    margin-bottom: 20px;
+}

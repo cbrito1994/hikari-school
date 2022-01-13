@@ -1,0 +1,13 @@
+.submenu__info {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 14px 10px;
+    width: 200px;
+    font-size: 13px;
+}
+
+.submenu__info:hover {
+    background-color: #051221;
+    cursor: pointer;
+}
